@@ -3,4 +3,4 @@
   become: True
   hosts: all
   roles:
-    - role: mongodb
+    - role: ansible-role-mongodb
