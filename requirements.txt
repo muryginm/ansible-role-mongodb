@@ -1,6 +1,6 @@
 ansible==2.7.11
 
 # tests
-molecule[docker]==2.20.1
+molecule==2.20.1
 testinfra==1.19.0
 python-vagrant==0.5.15

@@ -12,13 +12,12 @@ Role to setup mongodb
     ```
 
 ## Test
-```bash
-molecule create
-molecule converge
-molecule verify
-```
+1. Install vargrant plugin to run molecule
+    ```bash
+    vagrant plugin install vagrant-vbguest
+    ```
 
-## Cleanup
-```bash
-molecule destroy
-```
+1. Run tests
+    ```bash
+    molecule test
+    ```

@@ -16,6 +16,12 @@
     dest: /etc/mongod.conf
   notify: restart mongodb
 
+- name: check if firewall is installed
+  shell: command -v firewall-cmd >/dev/null
+  register: firewall_is_installed
+  failed_when: no
+  changed_when: no
+
 - name: open mongodb port
   firewalld:
     service: mongodb
@@ -23,3 +29,4 @@
     permanent: yes
     immediate: yes
     state: enabled
+  when: firewall_is_installed.rc == 0
