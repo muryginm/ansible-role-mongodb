@@ -1,7 +1,9 @@
+---
 galaxy_info:
   author: muryginm
   description: ansible role for setting up mongodb server
   company: your company (optional)
+  role_name: mongodb
 
   license: "license (BSD, MIT)"
 
@@ -15,3 +17,6 @@ galaxy_info:
   galaxy_tags:
     - database
     - mongodb
+
+dependencies: []
+...
